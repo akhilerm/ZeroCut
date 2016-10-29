@@ -19,6 +19,8 @@ html/war/WEB-INF/classes/
 gwt-unitCache/
 www-test/
 .gwt-tmp/
+html/gwt-2.8.0/*
+html/build/*
 
 ## Android Studio and Intellij and Android in general
 android/libs/armeabi/
@@ -27,6 +29,7 @@ android/libs/arm64-v8a/
 android/libs/x86/
 android/libs/x86_64/
 android/gen/
+android/build/*
 .idea/
 *.ipr
 *.iws
@@ -69,6 +72,3 @@ build/
 .DS_Store
 Thumbs.db
 
-##GWT
-doc/
-samples/
