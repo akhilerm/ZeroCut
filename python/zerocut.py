@@ -221,6 +221,7 @@ def playgame():
                 pygame.quit()
                 sys.exit()
             if event.type == KEYDOWN and event.key == K_ESCAPE:
+                player = True
                 return
             if event.type == MOUSEBUTTONUP:
                 pos = pygame.mouse.get_pos()
