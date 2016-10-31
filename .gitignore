@@ -72,3 +72,4 @@ build/
 .DS_Store
 Thumbs.db
 
+release_builds/*
