@@ -12,7 +12,6 @@ public class DesktopLauncher {
 		config.addIcon("ic_launcher_128.png", com.badlogic.gdx.Files.FileType.Internal);
         config.addIcon("ic_launcher_32.png", com.badlogic.gdx.Files.FileType.Internal);
         config.addIcon("ic_launcher_16.png", com.badlogic.gdx.Files.FileType.Internal);
-
 		new LwjglApplication(new ZeroCut(), config);
 	}
 }
