@@ -3,6 +3,9 @@ package com.slateandpencil.zerocut.board;
 import com.badlogic.gdx.Gdx;
 import com.slateandpencil.zerocut.board.Cell.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Akhil on 06-11-2016.
  */
@@ -39,6 +42,18 @@ public class Board {
             Gdx.app.log(TAG,"Cell already filled");
             return false;
         }
+    }
+
+    public List<CellPosition> emptyCellPositions() {
+        List<CellPosition> positions = new ArrayList<CellPosition>();
+        for (int i = 0; i < cells.length; i++) {
+            for (int x = 0; x < cells[i].length; x++) {
+                if (cells[i][x].value == CellValue.EMPTY) {
+                    positions.add(cells[i][x].position);
+                }
+            }
+        }
+        return positions;
     }
 
     public void clearBoard() {
