@@ -45,4 +45,20 @@ public class CellPosition {
     public int getColumn() {
         return c;
     }
+
+    public void setSubRow(int sub_r) {
+        this.sub_r = sub_r;
+    }
+
+    public void setSubColumn(int sub_c) {
+        this.sub_c = sub_c;
+    }
+
+    public void setRow(int r) {
+        this.r = r;
+    }
+
+    public void setColumn(int c) {
+        this.c = c;
+    }
 }
