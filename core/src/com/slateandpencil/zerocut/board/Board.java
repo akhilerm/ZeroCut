@@ -60,4 +60,8 @@ public class Board {
         nextBoard.cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value = value;
         return nextBoard;
     }
+
+    public Boolean gameOver() {
+        return getResults().hasWinner == true || emptyCellPositions().size() == 0;
+    }
 }
