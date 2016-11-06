@@ -19,8 +19,8 @@ public class CellPosition {
     }
 
     public CellPosition(int sub_r, int sub_c, int r, int c) {
-        this.sub_r = r;
-        this.sub_c = c;
+        this.sub_r = sub_r;
+        this.sub_c = sub_c;
         this.r = r;
         this.c = c;
     }
