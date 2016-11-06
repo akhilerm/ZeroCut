@@ -8,6 +8,7 @@ import com.badlogic.gdx.Gdx;
 
 public class Board {
     public static final String TAG = Board.class.getName();
+
     Cell[][] cells;
 
     public Board() {
@@ -46,5 +47,9 @@ public class Board {
                 cells[r][c] = new Cell(new CellPosition(r%3, c%3, r/3, c/3));
             }
         }
+    }
+
+    public Cell cellAtPosition(CellPosition position) {
+        return cells[position.sub_r*3+position.r][position.sub_c*3+position.c];
     }
 }

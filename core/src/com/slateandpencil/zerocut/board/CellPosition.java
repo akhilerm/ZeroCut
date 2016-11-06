@@ -6,6 +6,7 @@ package com.slateandpencil.zerocut.board;
 
 public class CellPosition {
     public static final String TAG = CellPosition.class.getName();
+
     int sub_r;
     int sub_c;
     int r;

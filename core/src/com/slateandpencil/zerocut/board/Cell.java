@@ -6,6 +6,7 @@ package com.slateandpencil.zerocut.board;
 
 public class Cell {
     public static final String TAG = Cell.class.getName();
+
     public enum CellValue {
         EMPTY, NOUGHT, CROSS
     }
