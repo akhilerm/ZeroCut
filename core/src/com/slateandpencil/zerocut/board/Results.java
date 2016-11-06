@@ -1,5 +1,7 @@
 package com.slateandpencil.zerocut.board;
 
+import com.slateandpencil.zerocut.board.Cell.*;
+
 /**
  * Created by Akhil on 06-11-2016.
  */
@@ -8,14 +10,14 @@ public class Results {
     public static final String TAG = Results.class.getName();
 
     Boolean hasWinner;
-    Cell.CellValue winnerType;
+    CellValue winnerType;
 
     public Results() {
         this.hasWinner = Boolean.FALSE;
-        this.winnerType = Cell.CellValue.EMPTY;
+        this.winnerType = CellValue.EMPTY;
     }
 
-    public Cell.CellValue getWinner() {
+    public CellValue getWinner() {
         return winnerType;
     }
 
@@ -23,7 +25,7 @@ public class Results {
         return hasWinner;
     }
 
-    public void setWinner(Cell.CellValue winnerType) {
+    public void setWinner(CellValue winnerType) {
         this.winnerType = winnerType;
     }
 

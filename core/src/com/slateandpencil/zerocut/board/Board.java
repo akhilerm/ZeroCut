@@ -1,6 +1,7 @@
 package com.slateandpencil.zerocut.board;
 
 import com.badlogic.gdx.Gdx;
+import com.slateandpencil.zerocut.board.Cell.*;
 
 /**
  * Created by Akhil on 06-11-2016.
@@ -29,8 +30,8 @@ public class Board {
         }
     }
 
-    public boolean setCell(CellPosition position, Cell.CellValue value) {
-        if(cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value == Cell.CellValue.EMPTY) {
+    public boolean setCell(CellPosition position, CellValue value) {
+        if(cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value == CellValue.EMPTY) {
             cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value = value;
             return true;
         }
