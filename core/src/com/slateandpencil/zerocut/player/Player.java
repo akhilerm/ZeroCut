@@ -3,6 +3,9 @@ package com.slateandpencil.zerocut.player;
 import com.slateandpencil.zerocut.board.Board;
 import com.slateandpencil.zerocut.board.Cell.CellValue;
 
+import static com.slateandpencil.zerocut.board.Cell.CellValue.CROSS;
+import static com.slateandpencil.zerocut.board.Cell.CellValue.NOUGHT;
+
 /**
  * Created by Akhil on 06-11-2016.
  */
@@ -18,9 +21,9 @@ public class Player {
 
         static {
             PLAYER_X.opposite = PLAYER_O;
-            PLAYER_X.cellValue = CellValue.CROSS;
+            PLAYER_X.cellValue = CROSS;
             PLAYER_O.opposite = PLAYER_X;
-            PLAYER_O.cellValue = CellValue.NOUGHT;
+            PLAYER_O.cellValue = NOUGHT;
         }
 
         public PlayerType oppositePlayer() {

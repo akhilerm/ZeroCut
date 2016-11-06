@@ -53,4 +53,11 @@ public class Board {
     public Cell cellAtPosition(CellPosition position) {
         return cells[position.sub_r*3+position.r][position.sub_c*3+position.c];
     }
+
+    public Board boardAfterMove(CellPosition position, CellValue value) {
+        Board nextBoard = new Board(this);
+        nextBoard.cells[position.sub_r*3+position.r][position.sub_c*3+position.c].position = position;
+        nextBoard.cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value = value;
+        return nextBoard;
+    }
 }
