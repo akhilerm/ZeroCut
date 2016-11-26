@@ -33,6 +33,22 @@ public class Board {
         }
     }
 
+    public int getScore(){
+        int totalScore=0;
+        /*
+         insert code to find score of a move
+         */
+        return totalScore;
+    }
+
+    public Results getResults(){
+        Results tempResults = new Results();
+        /*
+        insert code for result
+         */
+        return tempResults;
+    }
+
     public boolean setCell(CellPosition position, CellValue value) {
         if(cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value == CellValue.EMPTY) {
             cells[position.sub_r*3+position.r][position.sub_c*3+position.c].value = value;

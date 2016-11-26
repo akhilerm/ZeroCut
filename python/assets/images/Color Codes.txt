@@ -1,0 +1,10 @@
+#All color values in the range of 0..1
+
+Green Background Color
+R:76	G:175	B:80	A:1
+
+Start Page Border & Tic-tac-Toe writing
+R:96	G:125	B:139	A:1
+
+Start Game
+R:115	G:192	B:118	A:1
